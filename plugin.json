@@ -2,7 +2,11 @@
 	"id": "nodebb-theme-persona",
 	"library": "library.js",
 	"hooks": [
-		{ "hook": "filter:teasers.get", "method": "getTeasers" }
+		{ "hook": "filter:teasers.get", "method": "getTeasers" },
+		{ "hook": "filter:widgets.getAreas", "method": "defineWidgetAreas" },
+		{ "hook": "filter:config.get", "method": "getThemeConfig" },
+		{ "hook": "static:app.load", "method": "init" },
+		{ "hook": "filter:admin.header.build", "method": "addAdminNavigation" }
 	],
 	"scripts": [
 		"lib/persona.js",
@@ -10,5 +14,8 @@
 		"lib/modules/autohidingnavbar.min.js",
 		"lib/modules/slideout.min.js",
 		"lib/client/chats.js"
+	],
+	"acpScripts": [
+		"lib/admin.js"
 	]
 }
