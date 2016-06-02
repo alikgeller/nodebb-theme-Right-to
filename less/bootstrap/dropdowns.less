@@ -30,7 +30,7 @@
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 0;
+  
   z-index: @zindex-dropdown;
   display: none; // none by default, but block on "open" of the menu
   float: left;
@@ -51,8 +51,8 @@
   //
   // Deprecated as of 3.1.0 in favor of `.dropdown-menu-[dir]`
   &.pull-right {
-    right: 0;
-    left: auto;
+    right: auto;
+    
   }
 
   // Dividers (basically an hr) within the dropdown
@@ -134,8 +134,8 @@
 // Add extra class to `.dropdown-menu` to flip the alignment of the dropdown
 // menu with the parent.
 .dropdown-menu-right {
-  left: auto; // Reset the default from `.dropdown-menu`
-  right: 0;
+              // Reset the default from `.dropdown-menu`
+  right: auto;
 }
 // With v3, we enabled auto-flipping if you have a dropdown within a right
 // aligned nav component. To enable the undoing of that, we provide an override
@@ -144,7 +144,7 @@
 // This is only for left-aligning a dropdown menu within a `.navbar-right` or
 // `.pull-right` nav component.
 .dropdown-menu-left {
-  left: 0;
+  
   right: auto;
 }
 
@@ -170,8 +170,8 @@
 
 // Right aligned dropdowns
 .pull-right > .dropdown-menu {
-  right: 0;
-  left: auto;
+  right: auto;
+  
 }
 
 // Allow for dropdowns to go bottom up (aka, dropup-menu)

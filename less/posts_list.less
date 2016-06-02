@@ -7,11 +7,6 @@
 		width: 100%;
 		margin-bottom: 0px;
 
-		&.deleted {
-			-moz-opacity: 0.30;
-			opacity: 0.30;
-		}
-
 		.user-img {
 			.user-icon-style(@icon-radius * 2px, 1.5rem, 50%);
 			position: absolute;
@@ -83,16 +78,16 @@
 		}
 
 		.post-info {
-			position: absolute;
+			position: relative;
 			top: 50%;
-			left: 100%;
+			left: 3%;
 			width: 175px;
 			height: 28px;
 			margin-top: -14px;
 			font-size: 10px;
 
 			.post-author {
-				padding-left: 25px;
+				padding-right: 30px;
 				color: lighten(@gray-base, 65%);
 
 				a {
